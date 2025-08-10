@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Hub</title>
+    <style>
+        /* Estilo geral da página */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Fundo escuro */
+            color: #f0f0f0; /* Texto claro */
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+
+        /* Estilo dos botões */
+        button {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            border: 2px solid #444;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecione uma versão:</h1>
+    <button onclick="location.href='eglearwasm.html'">WASM GC (não funciona no Windows 7)</button>
+    <button onclick="location.href='eglearjs.html'">JS (funciona no Windows 7)</button>
+</body>
+</html>
