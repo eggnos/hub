@@ -1,54 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Select Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eggnos Hub - Minecraft Launcher</title>
     <style>
-        /* Estilo geral da página */
+        /* Importa a fonte pixelada do Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap' );
+
         body {
-            margin: 0;
-            padding: 0;
-            background-color: #121212; /* Fundo escuro */
-            color: #f0f0f0; /* Texto claro */
-            font-family: Arial, sans-serif;
+            /* Retornando à imagem de fundo clássica do Minecraft */
+            background-image: url('https://i.imgur.com/eG842r5.jpg' );
+            background-size: cover; /* Cobre toda a tela */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Fundo fixo */
+            
+            /* Fonte e cor do texto principal */
+            font-family: 'VT323', monospace;
+            color: #FFFFFF; /* Cor do texto branca */
+            text-shadow: 2px 2px 4px #000000; /* Sombra para legibilidade */
+            
+            /* Centraliza o conteúdo na tela */
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
+            margin: 0;
+        }
+
+        .launcher-container {
+            /* Estilo do container central, como na primeira versão */
+            background-color: rgba(0, 0, 0, 0.6); /* Fundo preto semi-transparente */
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid #555555; /* Borda cinza escura */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
         }
 
         h1 {
-            margin-bottom: 40px;
-            font-size: 2em;
+            /* Título "Eggnos Launcher" em branco, como solicitado */
+            font-size: 48px;
+            color: #FFFFFF; /* Cor branca */
+            margin-bottom: 30px;
         }
 
-        /* Estilo dos botões */
-        button {
-            background-color: #1e1e1e;
-            color: #ffffff;
-            border: 2px solid #444;
+        .launch-button {
+            /* Botões com o estilo original que remete ao menu do jogo */
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+            border: 2px solid #555555;
             padding: 15px 30px;
-            margin: 10px;
-            font-size: 1em;
+            margin: 10px 0;
+            font-family: 'VT323', monospace;
+            font-size: 24px;
             cursor: pointer;
-            border-radius: 8px;
-            transition: background-color 0.3s, transform 0.2s;
+            transition: background-color 0.3s, transform 0.1s;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
         }
 
-        button:hover {
-            background-color: #333;
-            transform: scale(1.05);
+        .launch-button:hover {
+            background-color: #5A5A5A; /* Efeito ao passar o mouse */
+            transform: scale(1.02);
         }
 
-        button:active {
-            transform: scale(0.98);
+        .launch-button:active {
+            transform: scale(0.98); /* Efeito de clique */
+        }
+
+        .button-note {
+            font-size: 16px;
+            color: #AAAAAA; /* Nota em cinza claro */
+            margin-top: -5px;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
-    <h1>Selecione uma versão:</h1>
-    <button onclick="location.href='eglearwasm.html'">WASM GC (não funciona no Windows 7)</button>
-    <button onclick="location.href='eglearjs.html'">JS (funciona no Windows 7)</button>
+
+    <div class="launcher-container">
+        <h1>- Eggnos Launcher -</h1>
+
+        <!-- Botão 1 -->
+        <button class="launch-button" onclick="window.location.href='eglearwasm.html'">
+            Minecraft 1.8 WASM-GC
+        </button>
+        <p class="button-note">(Não funciona no Windows 7)</p>
+
+        <!-- Botão 2 -->
+        <button class="launch-button" onclick="window.location.href='eglearjs.html'">
+            Minecraft 1.8 JC
+        </button>
+        <p class="button-note">(Funciona no Windows 7)</p>
+    </div>
+
 </body>
 </html>
