@@ -18,11 +18,11 @@ Aqui estão algumas dúvidas comuns sobre o projeto:
 
 | Pergunta | Resposta |
 | :--- | :--- |
-| **Por que a fonte Comic Sans?** | Porque é maneiro. 😎 |
-| **Isso é só um hub para o Eaglercraft?** | Não apenas isso... mas talvez você descubra algo a mais jogando (ou explorando o site). 😉 |
+| **Por que a fonte Comic Sans?** | Porque é maneiro. :) |
+| **Isso é só um hub para o Eaglercraft?** | Não apenas isso... mas talvez você descubra algo a mais jogando (ou na guia do site :I ). |
 
 ---
 
 <div align="center">
-  <sub>Hub Eggnos — seu Minecraft, em qualquer lugar.</sub>
+  <sub>Hub Eggnos — seu Minecraft, em qualquer lugar (até na escol...).</sub>
 </div>
